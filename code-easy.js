@@ -1,21 +1,31 @@
 // oblast definice funkcí
 
 // 1) Funkce co vrací boolean hodnotu zda stringInput, obsahuje v sobě stringToFind; je caseSensitive (defaultní chování)
-function contains(stringInput, stringToFind) {}
+function contains(stringInput, stringToFind) {
+  return stringInput.includes(stringToFind);
+}
 
 // 2) Funkce co vrací délku pole poskytnutého v arrayInput
-function size(arrayInput) {}
+function size(arrayInput) {
+  return arrayInput.length;
+}
 
 // 3) Funkce co vrací opak poskytnutého boolean hodnoty v booleanInput
-function negate(booleanInput) {}
+function negate(booleanInput) {
+  return !booleanInput;
+}
 
 // 4) Funkce co spojí (bez žádného přidaného znaku) dva textové řetězce string1 a string2 a vrátí je jako jeden string
 // například pro "Hello", "World" bude výsledek "HelloWorld"
-function join(string1, string2) {}
+function join(string1, string2) {
+  return string1 + string2;
+}
 
 // 5) Funkce co vrací hodnotu z pole arrayInput na indexu indexInput (od 0)
 // například pro ["apple", "banana", "kiwi", "orange", "strawberry"], 2 bude výsledek "kiwi"
-function get(arrayInput, indexInput) {}
+function get(arrayInput, indexInput) {
+  return arrayInput[indexInput];
+}
 
 // oblast volání funkcí
 const fruits = ["apple", "banana", "kiwi", "orange", "strawberry"];
